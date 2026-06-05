@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <input type="button" onclick="location.href='history.html'" value="戻る" class="button"><br>
+    <h2 id="detail-date"></h2>
+
+    <div class="container">
+        <p>今日の話:</p>
+        <p id="detail-story" style="white-space: pre-wrap;">（ここに今日の話が表示されます）</p>
+    </div>
+
+    <div class="record_set_container">
+        <div id="detail-set-container">
+            
+            <div class="record_set">
+                <p>話の事実:</p>
+                <p class="textcontainer">（ここに事実が表示されます）</p>
+                <p>話の解釈:</p>
+                <p class="textcontainer">（ここに解釈が表示されます）</p>
+            </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <p>今日の体調（５段階）： <span id="detail-health"></span></p>
+        <p>今日の気分（５段階）： <span id="detail-mood"></span></p>
+    </div>
+
+    <div class="container">
+        <p>明日１つやること：</p>
+        <p id="detail-tomorrow">（ここに明日やることが表示されます）</p>
+    </div>
+
+    <input type="button" onclick="location.href='history.html'" value="履歴に戻る" class="button"><br>
+    <br>
+    <input type="button" onclick="location.href='Home.html'" value="ホームに戻る" class="button">
+
+    <input type="button" onclick="location.href='Home.html'" value="ホームに戻る" class="button"><br>
+    <input type="button" id="delete-record-btn" value="この日の記録を削除する" class="button" style="background-color: #d9534f; margin-top: 20px;">
+    <script src="detail.js"></script>
+</body>
+</html>

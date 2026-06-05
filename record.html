@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <input type="button" onclick="location.href='home.html'" value="戻る" class="button"><br>
+    <div class="container">
+        <p class="item_text">今日の話:</p>
+        <textarea id="story" name="story" rows="5" cols="30">
+        </textarea>
+    </div>
+
+    <div class="container">
+
+        <div class="record_set">
+            <p  class="item_text">話の事実:</p>
+            <input type="text" class="fact-input"><br>
+            <p class="item_text">話の解釈:</p>
+            <input type="text" class="interpretation-input"><br>
+        </div>
+        <button class="button" id="addbutton" onclick="addform()">フォーム追加</button> 
+
+    </div>
+
+    <div class="container">
+        <p class="item_text">今日の体調（５段階）：</p>
+        <input type="range" min="1" max="5" id="healthRange">
+
+        <p class="item_text">今日の気分（５段階）:</p>
+        <input type="range" min="1" max="5" id="moodRange">
+    </div>
+
+    <div class="container">
+        <p class="item_text">明日１つやること：</p>
+        <input type="text" id="tomorrowTask"><br>
+    </div>
+
+
+    <button type="button" class="button" id="saveBtn">記録する</button>
+
+    <script src="record.js"></script>
+</body>
+</html>
