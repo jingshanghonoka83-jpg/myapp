@@ -7,6 +7,16 @@ body{
 .button{
     background-color: #333333;
     color: #e0e0e0;
+    font-size: large;
+}
+
+.button1{
+    background-color: #333333;
+    color: #e0e0e0;
+    width: 200px;
+    height: 100px;
+    font-size: large;
+    margin: 50px;
 }
 
 #addbutton{
