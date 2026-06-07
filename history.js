@@ -13,7 +13,6 @@ diaryList.forEach((record) => {
         <div class="container" style="margin-bottom: 20px;">
         <a href="detail.html?id=${record.id}" style="text-decoration: none; color: #fff; font-size: 18px;">
             <h3>📅 ${record.date}</h3>
-            <p><strong>今日の話:</strong> ${record.story}</p>
             </a>
             <hr>
         </div>
