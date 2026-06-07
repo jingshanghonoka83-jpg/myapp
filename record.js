@@ -66,7 +66,7 @@ saveBtn.addEventListener("click", ()=>{
         localStorage.setItem('myDiaryData', JSON.stringify(diaryData));
         alert("今日の記録を保存しました！");
         
-        location.href = 'Home.html';
+        location.href = 'index.html';
 });
 
 
